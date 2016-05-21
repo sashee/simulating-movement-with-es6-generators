@@ -1,0 +1,50 @@
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/6.8.0/polyfill.js"></script>
+		<script src="https://rawgit.com/sashee/gentoo/built/lib/gentoo.js"></script>
+		<script src="https://code.jquery.com/jquery-2.2.3.js"></script>
+		<script src="script.js"></script>
+		<style>
+			.container {
+				position: relative;
+				width: 300px;
+				height: 300px;
+				border: 1px solid black;
+			}
+
+			#game {
+				position: absolute;
+				width: 100%;
+				height: 100%;
+			}
+
+			circle {
+				fill: black;
+			}
+
+			path {
+				stroke: black;
+				fill: none;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Simulating movement with ES6 generators</h1>
+		<p>This is a demonstration project on how to use infinite collections to make movement simulation
+			readable using generators</p>
+		<p>Hover your mouse over the image to set the initial velocity of the ball, then observe it's path</p>
+		<p>It will either collide with one of the planets or terminate after a while</p>
+		<div class="container">
+			<svg id="game">
+				<circle cx="150" cy="150" r="2" />
+				<g id="holes">
+					<circle cx="180" cy="180" r="5" />
+					<circle cx="80" cy="180" r="5" />
+					<circle cx="80" cy="100" r="5" />
+				</g>
+				<path d="M150 298" />
+			</svg>
+		</div>
+	</body>
+</html>
