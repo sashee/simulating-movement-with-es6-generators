@@ -5,6 +5,8 @@ usually done with a terminating while loop. With generators, the actual path cal
 making the code easier to understand and more reusable. It's also useful when the calculations needs to be more precise
 than the display.
 
+[Live demo](http://sashee.github.io/simulating-movement-with-es6-generators/)
+
 This example is using the [Gentoo](https://github.com/sashee/gentoo) library.
 
 ## The path calculation
